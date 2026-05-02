@@ -13,7 +13,7 @@ app.use(
       "https://taskmanager-ecru-six.vercel.app",
       "http://localhost:5173"
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE" , "PATCH"],
     credentials: true
   })
 );
