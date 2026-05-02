@@ -6,10 +6,16 @@ const db = require('./db');
 const app = express();
 
 // Middleware
+
 app.use(
-    cors({
-        origin: ['taskmanager-ecru-six.vercel.app', 'http://localhost:5173']
-    })
+  cors({
+    origin: [
+      "https://taskmanager-ecru-six.vercel.app",
+      "http://localhost:5173"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
 );
 app.use(express.json());
 
