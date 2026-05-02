@@ -1,7 +1,7 @@
 import axios from 'axios';
-
+import dotenv from 'dotenv';
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL : import.meta.env.VITE_APP_API_URL,
 });
 
 // Request interceptor to add the JWT token to headers
