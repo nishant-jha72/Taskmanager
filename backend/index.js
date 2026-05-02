@@ -7,7 +7,9 @@ const app = express();
 
 // Middleware
 app.use(
-    cors() ,
+    cors({
+        origin: ['taskmanager-ecru-six.vercel.app', 'http://localhost:5173']
+    })
 );
 app.use(express.json());
 
